@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tico Tower</title>
+
+<!-- linkki omaan jquery mobile teemaan -->
+<link href="css/themes/Teema.min.css" rel="stylesheet" type="text/css"/>
+<!-- linkki jquery-ikonien tyylitiedoston -->
+<link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+<!-- linkki jquery mobilen yleiseen tyylitiedostoon -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"> 
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8" />
+
+<!-- linkki jqueryn kirjaston -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<!-- linkki jquery mobilen kirjastoon -->
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css">
+<link href="css/tyyli.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.mobile.datepicker.js"></script>
+
+<script src="js/jquery.ui.datepicker.js"></script>
+</head>
+
+<body id="bodi">
+
+<div data-role="page" id="etusivu"  data-theme="a">
+  <div data-position="fixed" data-role="header">
+    
+    <h1>Tico Tower</h1>
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#kahvila" data-transition="slide">Kahvila</a></li>
+        <li> <a href="#menu" data-transition="slide">Menu</a></li>
+        <li><a href="#varaus" data-transition="slide">Varaus</a></li>
+         <li><a href="#yhteystiedot" data-transition="slide">Yhteystiedot</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+   
+      <article class="ui-grid-a ui-responsive">
+        <h3>Tervetuloa viihtymään tunnelmalliseen Tico&nbsp;Toweriin</h3>
+        
+        <div id="slaidishou" class="ui-block-a cycle-slideshow">
+        <!-- cycle slideshow -->
+		    <img src="kuvat/annos.jpg">
+			<img src="kuvat/ticotower.jpg">
+			<img src="kuvat/vitriini.jpg">
+			<img src="kuvat/kahvit.jpg">
+        </div>
+        
+		<div class="ui-block-b">
+        <a href="#kahvila" data-transition="slide"><h1>Herkullisia leivonnaisia ja jäätelöä</h1></a>
+        <p>Trendikkäässä Tico Towerissa voit piipahtaa kahvilla tai nauttia lounaan. </p>
+      
+        <a href="#menu" data-transition="slide"><h1>Tutustu a la carte -listaamme</h1></a>
+        <p>Illalla on tarjolla myös valikoitua herkkuja a la carte -listastallamme. </p>
+        
+       <a href="#yhteystiedot" data-transition="slide"><h1>Katso tarkemmat sijaintitiedot</h1></a>
+        <p>Tico Tower sijainti on  keskeisellä paikkalla hyvin kulkuyhteyksien päässä Pasilassa. Lähin juna-asema sijaitsee vain 100 m päässä, josta on suora ja nopea yhteys niin keskustaan kuin lentokentällekin.</p>
+       </div>
+        
+</article>
+</div>
+        
+  <div data-role="footer">
+    <h1>Yhteystiedot: Tico Tower, Ratapihantie 13, 00520 Helsinki</h1>
+  </div>
+</div> 
+
+<!-- kahvila sivu alkaa -->
+<div data-role="page" id="kahvila" data-theme="b">
+  <div data-position="fixed" data-role="header">
+
+    <h1>Kahvila</h1>
+  
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#etusivu" data-transition="slide">Etusivu</a></li>
+        <li><a href="#menu" data-transition="slide">Menu</a></li>
+        <li><a href="#varaus" data-transition="slide">Varaus</a></li>
+         <li><a href="#yhteystiedot" data-transition="slide">Yhteystiedot</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div data-role="main" class="ui-content listakuvat">
+    <h2>Kahvilasta makunautintoja</h2>
+    <ul data-role="listview" data-inset="true">
+      <li>
+		<a href="#myPopup" data-rel="popup" data-position-to="window">
+		<img src="kuvat/kahvit.jpg">
+        <h2>Kahvinautintoja</h2>
+        <p>Makuja eri puolilta maailmaa</p>
+        </a>
+      </li>
+      <li>
+       	<a href="#myPopup2" data-rel="popup" data-position-to="window">
+		<img src="kuvat/kahvila.jpg">
+        <h2>Pieniä makupaloja</h2>
+        <p>Keittiömme on loihtinut pieniä ja maittavia  makupaloja.</p>
+       </a>
+      </li>
+      <li>
+       	<a href="#myPopup3" data-rel="popup" data-position-to="window">
+		<img src="kuvat/suolaista.jpg">
+        <h2>Suolaisia makuja</h2>
+        <p>Maukkaat suolaiset makupalat odottavat sinua.</p>
+       </a>
+      </li>
+      <li>
+        <a href="#myPopup4" data-rel="popup" data-position-to="window">
+		<img src="kuvat/juustokakku1.jpg">
+        <h2>Perinteiset juustokakut</h2>
+        <p>Perinteisiin juustokakkuihin on tuotu raikkautta tuoreilla marjoilla.</p>
+       </a>
+      </li>
+      <li>
+        <a href="#myPopup5" data-rel="popup" data-position-to="window">
+		<img src="kuvat/vitriini.jpg">
+        <h2>Vitriini täynnä herkkuja</h2>
+        <p>Voit valita vitriinistä haluamasi kakkupalan ja nauttia sen kahvilassamme tai ottaa mukaasi.</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+    
+    <div data-role="popup" id="myPopup">
+      <p>Kahvinautintoja</p> 
+      <a href="#kahvila" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="kuvat/kahvit.jpg">
+    </div>
+
+      <div data-role="popup" id="myPopup2">
+      <p>Pieniä makupaloja</p> 
+      <a href="#kahvila" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="kuvat/kahvila.jpg">
+    </div>
+  
+      <div data-role="popup" id="myPopup3">
+      <p>Suolaisia makupaloja</p> 
+      <a href="#kahvila" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="kuvat/suolaista.jpg">
+    </div>
+  
+      <div data-role="popup" id="myPopup4">
+      <p>Juustokakku tuoreilla marjoilla</p>
+      <a href="#kahvila" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="kuvat/juustokakku1.jpg">
+    </div>
+
+  
+      <div data-role="popup" id="myPopup5">
+      <p>Vitriinistä on helppo valita</p> 
+      <a href="#kahvila" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="kuvat/vitriini.jpg">
+    </div>
+
+    <div data-role="footer">
+    <h1>Ratapihantie 13, 00520 Helsinki</h1>
+  </div>
+</div> 
+
+<!-- kahvila-sivu loppuu -->
+
+
+
+<!-- menu-sivu alkaa -->
+
+<div id="menu" data-role="page" data-theme="c">
+  <div data-position="fixed" data-role="header">
+    <h1>A la carte</h1>
+  
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#etusivu" data-transition="slide">Etusivu</a></li>
+        <li><a href="#kahvila" data-transition="slide">Kahvila</a></li>
+        <li><a href="#varaus" data-transition="slide">Varaus</a></li>
+        <li><a href="#yhteystiedot" data-transition="slide">Yhteystiedot</a></li>
+      </ul>
+    </div>
+  </div>
+ 	
+ <div data-role="main" class="ui-content">
+ 
+	<div class="ui-grid-a ui-responsive">	
+		<div class="ui-block-a" data-role="collapsibleset">
+		
+			<div data-role="collapsible">
+				<h3>Salaatit</h3>
+		
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Ceasarsalaatti 7,90 €</p>
+					<p>Ceasarsalaatti kanalla 11,90 €</p>
+					<p>Ceasarsalaatti katakaravuilla 12,50 €</p>
+					</div>
+		
+					<div class="ui-block-b">
+					<img src="kuvat/salaatti.jpg">
+					</div>
+				</div>		
+			</div>
+	  
+			<div data-role="collapsible">
+			<h3>Keitot</h3>
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Talon tomaattikeitto 5,50 €</p>
+					<p>Maa-artisokkakeitto 6,50 €</p>
+					<p>Sipulikeitto 6,20 €</p>
+					<p>Kermainen tattikeitto 7,50 €</p>
+					<p>Rapukeitto 7,90 €</p>
+					</div>
+					<div class="ui-block-b">
+					<img src="kuvat/keitto.jpg">	
+					</div>
+				</div>	
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Pasta</h3>
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Pasta Carbonara 13,50 €</p>
+					<p>Penne Prosciutto 12,90 €</p>
+					<p>Chicken Pasticcio 12,50 €</p>
+					<p>Baked Canneloni 12,90 €</p>
+					</div>
+					<div class="ui-block-b">
+					<img src="kuvat/pasta.jpg">	
+					</div>
+				</div>	
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Pizza</h3>
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Tutti di Mare 11,90 €</p>
+					<p>Opera 11,90 €</p>
+					<p>Imperiale 12,90 €</p>
+					</div>
+					<div class="ui-block-b">
+					<img src="kuvat/pizza.jpg">	
+					</div>
+				</div>	
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Grilliruoka</h3>
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Härän sisäfileetä ja perunagratiinia 21,90 €</p>
+					<p> Entrecôte ja valkosipuliperunoita 23,50 €</p>
+					<p>Grillattua  kanan rintaa ja ranskalaisia 18,50 €</p>
+					<p>Grillattua lohta ja lohkoperunoita 19,90 €</p>
+					</div>
+					<div class="ui-block-b">
+					<img src="kuvat/pihvi.jpg">	
+					</div>
+				</div>	
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Kakut ja piiraat</h3>
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Piparkakkumousse 6,90 €</p>
+					<p>Crème Brûlée  7,20 €</p>
+					<p>Suklaakakku vadelmakastikkeella 8,50 €</p>
+					<p>Ananas Tarte Tatin ja vaniljajäätelöpallo 7,50 €</p>
+					<p>Mustikkajuustokakku 7,50 €</p>
+					<p>Kirsikkapiiras 8,50 €</p>
+					</div>
+					<div class="ui-block-b">
+					<img src="kuvat/juustokakku2.jpg">	
+					</div>
+				</div>	
+			</div>
+			
+			<div data-role="collapsible">
+			<h3>Jäätelöt</h3>
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+					<p>Vaniljajäätelö suklaakastikkeella 4,60 €</p>
+					<p>Pistaasijäätelö vadelmakastikeella 5,80 €</p>   
+					</div>
+					<div class="ui-block-b">
+					<img src="kuvat/jade2.jpg">	
+					</div>
+				</div>	     
+			</div>
+			
+		</div>
+		
+		<div class="ui-block-b">
+			<img src="kuvat/jade1.jpg">
+		</div>
+	  
+    </div>
+</div>
+ 
+    <div data-role="footer">
+    <h1>Ratapihantie 13, 00520 Helsinki</h1>
+  </div>
+ </div> 
+ 
+ <!-- menu loppuu -->
+
+
+<!-- varaus-sivu alkaa -->
+ 
+<div data-role="page" id="varaus" data-theme="a">
+  <div data-position="fixed" data-role="header">
+    <h1>Pöytävaraus</h1>
+   
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#etusivu" data-transition="slide">Etusivu</a></li>
+        <li><a href="#kahvila" data-transition="slide">Kahvila</a></li>
+        <li><a href="#menu" data-transition="slide">Menu</a></li>
+        <li><a href="#yhteystiedot" data-transition="slide">Yhteystiedot</a></li>
+      </ul>
+    </div>
+  </div>
+  
+
+<div data-role="main" class="ui-content">
+	<div class="ui-grid-a ui-responsive">
+	
+		<div class="ui-block-a">
+			<p>
+			Pöytävaraus on helppo tehdä lomakkeella. 
+			Varaus on voimassa vasta kun saat varausvahvistuksen sähköpostiisi.
+			Yli 10 hengen seurueille pöytävaraukset suoraan hovimestarilta p. 044-440 440.
+			</p>
+			<form>
+			<fieldset>
+			<div>
+			<label for="paiva">Varauspäivä: </label>
+			<input type="text" id="paiva" name="paiva" data-role="date" required>
+			</div>
+			<div>
+			Kello:   
+			<select>
+			<option>16:00</option>
+			<option>16:30</option>
+			<option>17:00</option>
+			<option>17:30</option>
+			<option>18:00</option>
+			<option>18:30</option>
+			<option>19:00</option>
+			<option>19:30</option>
+			<option>20:00</option>
+			<option>20:30</option>
+			</select>
+			</div>
+			<div>
+			Henkilöiden lukumäärä:   
+			<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			</select>
+			</div>
+
+			<div>
+			 <label for="etunimi">Etunimi:</label>
+			 <input  type="text" id="etunimi" name="etunimi" title="Kirjoita etunimesi" data-clear-btn="true">
+			</div>
+			<div>
+			 <label for="sukunimi">Sukunimi:</label>
+			 <input  type="text" id="sukunimi" name="sukunimi" title="Kirjoita sukunimesi" data-clear-btn="true">
+			</div>
+			<div>
+			 <label for="email">Sähköposti:</label>
+			 <input  required type="email" id="email" name="email" title="Kirjoita sähköpostiosoitteesi" data-clear-btn="true">
+			</div>
+			<div>
+			 <label for="puhelin">Puhelin</label>
+			 <input  required type="tel" id="puhelin" name="puhelin" title="Kirjoita puhelinnumerosi" data-clear-btn="true">
+			</div>
+
+			   
+			<div>
+			<label for="viesti">Erikoistoivomuksia:</label>
+			<textarea id="viesti" name="viesti" title="Kerro vielä varaukseesi liittyviä asioita" rows="3" cols="30" ></textarea>
+			</div>
+			<input type="submit" value="Lähetä">
+			</fieldset>
+
+			</form>
+		</div>
+ 		<div class="ui-block-b">
+			<img src="kuvat/jade2.jpg">
+		</div>
+	</div>
+</div>
+  <div data-role="footer">
+    <h1>Ratapihantie 13, 00520 Helsinki</h1>
+  </div>
+</div> 
+
+<!-- varaus-sivu loppuu -->
+
+
+
+<!-- yhteystiedot-sivu alkaa-->
+
+<div id="yhteystiedot" data-role="page" data-theme="b">
+  <div data-position="fixed" data-role="header">
+    <h1>Yhteystiedot</h1>
+   
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#etusivu" data-transition="slide">Etusivu</a></li>
+        <li><a href="#kahvila" data-transition="slide">Kahvila</a></li>
+        <li><a href="#menu" data-transition="slide">Menu</a></li>
+        <li><a href="#varaus" data-transition="slide">Varaus</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+  <div data-role="main" class="ui-content">
+	<div class="ui-grid-a ui-responsive">
+    
+		<div class="ui-block-a">
+			<table data-column-btn-text="Valitse näytettävät tiedot" data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+			  <thead>
+				<tr>
+				
+				  <th>Titteli</th>
+				  <th data-priority="1">Nimi</th>
+				  <th>Puhelin</th>
+				  <th data-priority="6">Sähköposti</th>
+				  <th data-priority="6">Tervehdys</th>
+				 
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				 
+				  <td>Ravintolapäällikkö</td>
+				  <td data-priority="1">Esa Merkki</td>
+				  <td>040-440044</td>
+				  <td data-priority="6">esa.merkki@ticotower.com</td>
+				  <td data-priority="6">Asiakas on meille tärkein!</td>
+				</tr>
+				<tr>
+				  
+				  <td>Keittömestari</td>
+				  <td data-priority="1">Alfons Åberg</td>
+				  <td>040-044044</td>
+				  <td data-priority="6">alfons.åberg@ticotower.com</td>
+				  <td data-priority="6">Jo ajatus herkuistamme herkistää makuhermosi!</td>
+				  
+				</tr>
+				<tr>
+				  
+				  <td>Hovimestari</td>
+				  <td data-priority="1">Mikko Mallikas</td>
+				   <td>044-004004</td>
+				  <td data-priority="6">mikko.mallikas@ticotower.com</td>
+				  <td data-priority="6">Viinilistamme erikoisuudet täydentävät illallisesi!</td>
+				  
+				</tr>
+				<tr>
+				 
+				  <td>Salivastaava</td>
+				  <td data-priority="1">Anna Malli</td>
+				  <td>044-444444</td>
+				  <td data-priority="6">anna.malli@ticotower.com</td>
+				  <td data-priority="6">Moderdi sisutuksemme luo viityisän tunnelman!</td>
+				</tr>
+
+			  </tbody>
+			</table>
+		</div>
+	
+		<div class="ui-block-b">
+			<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.6803039976505!2d24.931151816107743!3d60.20257348197291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469209922554347b%3A0xaf877e467ac63d4a!2sRatapihantie+15%2C+00101+Helsinki!5e0!3m2!1sfi!2sfi!4v1460548033520" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+ </div>
+
+  <div data-role="footer">
+    <h1>Ratapihantie 13, 00520 Helsinki</h1>
+  </div>
+</div> 
+
+</body>
+</html>

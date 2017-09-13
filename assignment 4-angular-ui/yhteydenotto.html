@@ -1,0 +1,54 @@
+<div ui-content-for="title">
+  <span>Yhteydenotto</span>
+</div>
+
+<div class="scrollable">
+ <div class="scrollable-content section">
+   
+  <form role="form" ng-submit='laheta()'>
+    <fieldset>
+      <legend>Pyydä tarjous</legend>
+        <div class="form-group has-success has-feedback">
+          <label>Nimi</label>
+          <input type="password" 
+                 class="form-control"
+                 placeholder="Nimesi">
+
+		<label>Email</label>
+          <input type="email"
+                 ng-model="email"
+                 class="form-control"
+                 placeholder="me@example.com">
+
+        </div>
+		
+		        <div class="form-group">
+          <label>Puhelin</label>
+          <input type="tel" 
+                 class="form-control"
+                 placeholder="Puhelinnumerosi">
+        </div>
+		
+		<div class="form-group">
+			<label>Viesti</label>
+			<textarea ng-model="myTextarea" class="form-control" placeholder="Viestisi">
+		
+			</textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Haluan, että otatte yhteyttä mahdollisimman pian</label>
+          <ui-switch 
+            ng-model='rememberMe'></ui-switch>
+        </div>
+    </fieldset>
+    <hr>
+
+    <button class="btn btn-primary btn-block">
+      Lähetä
+    </button>
+
+
+  </form>
+ </div>
+</div>

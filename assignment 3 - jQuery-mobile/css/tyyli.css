@@ -1,0 +1,60 @@
+div[data-role="page"] { 
+background: url('../kuvat/tausta.jpg'); 
+background-color:rgba(240,240,240);
+opacity:0.95;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+background-size: cover;
+}
+
+div[data-role="footer"] {
+position:absolute;
+bottom:0px;
+width:100%;
+
+}	
+
+table { 
+border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+	background-color:grey;
+}
+
+p{
+font-family: 'gooddogregular';
+}
+
+h1,h2,h3{   
+font-family: 'capture_itregular';
+}
+
+h3{
+	text-align:center;
+}
+
+img {
+	width:100%;
+}
+.listakuvat img{
+	width:100%;
+	height:100%;
+}
+
+#myPopup,#myPopup2,#myPopup3,#myPopup4,#myPopup5{
+	width:80%;
+	margin:auto;
+}
+
+.ui-block-b{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#iframe{
+	width:100%;
+	height:400px;
+	position:relative;
+}

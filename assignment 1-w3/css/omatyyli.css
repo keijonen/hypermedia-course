@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+h1 {
+color: blue;
+font-family: 'Indie Flower', cursive;
+}
+
+@media (min-width: 769px) {
+h1 {font-size:46px;
+text-shadow:5px 5px 5px gray;
+}
+}
+
+@media (min-width: 1020px) {
+h1 {font-size:64px;
+text-shadow:5px 5px 5px gray;
+}
+}
+
+nav{
+width: 200px;
+height: 99%;
+}
+
+.sivudiv{
+margin-left: 200px;
+}
+
+.hederi{
+position: fixed;
+background-color: white;
+color: black;
+}
+
+.etusivu_kuvat img{
+width: 100%;
+max-width: 400px;
+transition: transform .5s; 
+}
+
+.kuva img{
+width: 100%;
+max-width: 350px;
+}
+
+.etusivu_kuvat img:hover{
+-ms-transform: rotate(5deg); /* IE 9 */
+-webkit-transform: rotate(5deg); /* Safari, Chrome */
+transform: rotate(-5deg) scale(1.1);
+
+}
+
+.buttoni{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttoni:hover {
+opacity: 0.9;
+
+}
+
+nav a.active {
+background-color: MediumPurple ;}
+
+.tooltippi{
+	position: relative;
+	display:inline-block;
+}
+
+.tooltippi p {
+	
+	background-color: purple;
+	position:absolute;
+	padding: 0px;
+	left:0px;
+	top:0px;
+	width:100%;
+	max-width:400px;
+	margin:0px;
+
+}
+
+.tooltippi img{
+	width:100%;
+	max-width: 400px;
+}
+
+.kohteetButton button{
+	background-color: purple;
+}
+
+.hahmot{
+	margin-bottom: 4em;
+	text-align: center;	
+}
+
+.kuva{
+	position: relative;
+line-height: 0;
+margin-bottom: 2em;
+overflow: hidden;
+}
+
+.teksti {color: #fff;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0; 
+left: 0;
+display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: rgba(0,0,0, 0.5);}
+
+.kuva .teksti { opacity: 1;
+background: #cca6fa;}
+
+.teksti { opacity: 0;
+transition: opacity .5s;}
+
+.teksti:hover {opacity: 1;} 
+
+.kuva .teksti, .kuva img { transition: transform .6s ease-out;}
+.kuva .teksti { transform: translateX(-100%);}
+.kuva:hover .teksti {transform: translateX(0);}
+.kuva:hover img {transform: translateX(100%);}
+
+img.mySlides {
+	width:100%;
+	max-width:350px;
+}

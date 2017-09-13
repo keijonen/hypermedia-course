@@ -1,0 +1,53 @@
+<div id="klassikot">
+<div ui-content-for="title">
+  <span>Klassikot</span>
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class='section'>
+      <ui-state id='activeTab' default='1'></ui-state>
+      <!-- lisää tähän tab-painikkeiden otsikot (listaelementti) -->
+ <ul class="nav nav-tabs">
+		<!-- lisää loput listaelementit--> 
+		<li ui-class="{'active': activeTab == 1}">
+		<a ui-set="{'activeTab': 1}">Sporttisuutta</a>
+		</li>
+		<li ui-class="{'active': activeTab == 2}">
+		<a ui-set="{'activeTab': 2}">Retrotunnelmaa</a>
+		</li>
+		<li ui-class="{'active': activeTab == 3}">
+		<a ui-set="{'activeTab': 3}">Luksusta</a>
+		</li>
+
+</ul>    
+      <!-- lisää tähän tab:n sisällöt eli kuvat mallin mukaan -->
+		<div ui-if="activeTab == 1">
+		<h3 class="page-header">Sporttisuutta nopeaan menoon</h3>
+		<p><img src="img/auto7.jpg"></p>
+		</div>
+		<div ui-if="activeTab == 2">
+		<h3 class="page-header">Retrotunnelmaa rentoihin hetkiin</h3>
+		<p><img src="img/auto8.jpg"></p>
+		</div>
+		<div ui-if="activeTab == 3">
+		<h3 class="page-header">Luksusta arkeen ja juhlaan</h3>
+		<p><img src="img/auto12.jpg"></p>
+		</div>
+      <!-- lisää alareunan tab-painikkeet -->
+		<div class="btn-group justified nav-tabs">
+		<a ui-set="{'activeTab': 1}" 
+		ui-class="{'active': activeTab == 1}" class="btn btn-default">Sportti</a>
+		<!-- lisää myös 2. ja 3. tabiin painikkeet-->
+		<a ui-set="{'activeTab': 2}" 
+		ui-class="{'active': activeTab == 2}" class="btn btn-default">Retro</a>
+		<!-- lisää myös 2. ja 3. tabiin painikkeet-->
+		<a ui-set="{'activeTab': 3}" 
+		ui-class="{'active': activeTab == 3}" class="btn btn-default">Luksus</a>
+		<!-- lisää myös 2. ja 3. tabiin painikkeet-->
+		</div>
+    </div>
+
+  </div>
+</div>
+<div>

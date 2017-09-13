@@ -1,0 +1,730 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5 maximum-scale=1.5">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Kalakauppa E.Eriksson - Vanha kauppahalli</title>
+
+<!-- linkki omaan jquery mobile teemaan -->
+<link href="css/themes/Teema.min.css" rel="stylesheet" type="text/css"/>
+<!-- linkki jquery-ikonien tyylitiedoston -->
+<link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+<!-- linkki jquery mobilen yleiseen tyylitiedostoon -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"> 
+<!-- linkki jqueryn kirjaston -->
+<script   src="https://code.jquery.com/jquery-2.1.0.min.js"   integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="   crossorigin="anonymous"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<!-- linkki jquery mobilen kirjastoon -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css">
+<link rel="stylesheet" href="css/jquery.timepicker.css">
+<link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="kuvat/logo.png" size="32x32" />
+<script src="js/jquery.mobile.datepicker.js"></script>
+<script src="js/jquery.timepicker.js"></script>
+<script src="js/jquery.ui.datepicker.js"></script>
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+
+</head>
+
+<body>
+	<!-- ETUSIVU ALKAA -->
+	<div data-role="page" id="etusivu"  data-theme="a">
+	  <div data-position="fixed" data-role="header">
+		<div class="kielet">
+			<img class="kieli" src="kuvat/fi.png">
+			<img class="kieli" src="kuvat/en.png">
+			<img class="kieli" src="kuvat/ru.png">
+		</div>
+		<img class="logo" src="kuvat/logo.png">
+
+		<h1>Laadukasta kalaa vuodesta 1880</h1>
+
+		<div data-role="navbar">
+		  <ul>
+			<li> <a href="#myymala" data-transition="slide">MYYMÄLÄ</a></li>
+			<li> <a href="#historia" data-transition="slide">HISTORIA</a></li>
+			<li><a href="#galleria" data-transition="slide">GALLERIA</a></li>
+			<li><a href="#yhteystiedot" data-transition="slide">YHTEYSTIEDOT</a></li>
+			<li><a href="#tilaus" data-transition="slide">TILAUS</a></li>
+		  </ul>
+		</div>
+	  </div>
+
+	  <div data-role="main" class="ui-content">
+	   
+			<article class="ui-responsive">
+				<h2>Kalakauppa E.Eriksson - Vanha kauppahalli</h2>
+			
+				<div id="slideshow" class="cycle-slideshow">
+				<!-- cycle slideshow -->
+					<img src="kuvat/slaidi1.jpg">
+					<img src="kuvat/slaidi2.jpg">
+					<img src="kuvat/slaidi3.jpg">
+					<img src="kuvat/slaidi4.jpg">
+				</div>
+			
+				<div>
+					<p>Kalakauppa E. Eriksson kauppasi kalojaan Helsingin Kauppatorilla jo ennen kuin Wanha Kauppahalli valmistui. Tähän päivään mennessä yrityksestä on kehittynyt Kalatukku E. Eriksson Oy, joka on yksi pohjoismaiden vanhimmista, mutta toimintatavoiltaan ja -tiloiltaan nykyaikaisimpia yrityksiä kala-alalla. Perustamisestaan lähtien yritys on pysynyt saman suvun hallinnassa.</p>
+
+					<p>Kalatukku E. Eriksson Oy on perinteisesti tunnettu helsinkiläisten fine dining – ravintoloiden seafoodin toimittajana, mutta viime vuosina se on laajentanut toimintaansa myös henkilöstöravintola- sekä vähittäiskauppasektoreille. Yrityksen oma joka päivänen logistiikka on keskittynyt Etelä-Suomen alueelle, mutta viikoittain lähtevät kuormat myös muualle Suomeen.</p>
+
+					<p>Helsingin keskustan läheisyydessä sijaitseva Kalatukku E. Erikssonin tuotantolaitos on rakennettu viimeisten EU:n elintarvikelakien ja vaatimusten mukaisesti. Yrityksen valikoimista löytyy lähes 1000 erilaista seafood-tuotetta. Kotimaisten yhteistyökumppanien lisäksi yritys tekee päivittäin yhteistyötä myös ulkomaalaisten yhteistyökumppanien kanssa. Kansainvälisiä yhteistyökumppaneita Kalatukku E. Erikssonilla on esimerkiksi Saksassa, Belgiassa, Hollannissa, Ruotsissa, Tanskassa, Norjassa sekä Islannissa.</p>
+				</div>
+			
+			</article>
+		</div>
+			
+	<div data-role="footer" data-position="fixed">
+			<h3><a class="mailto" href="#yhteystiedot" data-transition="slide">Eteläranta, 00130 Helsinki</a> | <a class="mailto" href="tel:+358207639334">+358 207 639 334</a> | <a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a> | <a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> | <a class="mailto" href="#yhteystiedot" data-transition="slide">Ma-la klo 8-18</a></h3>
+		</div>
+	</div> 
+<!-- ETUSIVU LOPPUU -->
+
+
+
+<!-- MYYMÄLÄ sivu alkaa -->
+<div data-role="page" id="myymala" data-theme="a">
+  <div data-position="fixed" data-role="header">
+		<div class="kielet">
+			<img class="kieli" src="kuvat/fi.png">
+			<img class="kieli" src="kuvat/en.png">
+			<img class="kieli" src="kuvat/ru.png">
+		</div>
+		<img class="logo" src="kuvat/logo.png">
+	<h1>Laadukasta kalaa vuodesta 1880</h1>  
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#etusivu" data-transition="slide">ETUSIVU</a></li>
+		<li> <a href="#historia" data-transition="slide">HISTORIA</a></li>
+		<li><a href="#galleria" data-transition="slide">GALLERIA</a></li>
+		<li><a href="#yhteystiedot" data-transition="slide">YHTEYSTIEDOT</a></li>
+		<li><a href="#tilaus" data-transition="slide">TILAUS</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <article class="ui-responsive">
+		<h2>Vanhan kauppahallin myymälä</h2>
+		
+		<div id="slideshow" class="cycle-slideshow">
+			<!-- cycle slideshow -->
+			<img src="kuvat/myymalaslaidi1.png">
+			<img src="kuvat/myymalaslaidi2.png">
+			<img src="kuvat/myymalaslaidi3.png">
+			<img src="kuvat/myymalaslaidi4.png">
+			<img src="kuvat/myymalaslaidi5.png">
+			<img src="kuvat/myymalaslaidi6.png">
+		</div>
+
+		<p>Myymälästämme löydät myös mini-bistron, jossa toimii muun muassa osteribaari. Lisäksi baarissa on listalla, höyryäviä ”seafood hot pot” annoksia, kala- ja rapuleipiä. Juomiksi olemme huolella valinneet hyvät valkoviinit, shampanjaa, cavaa, oluita, siidereitä ja alkoholittomia virvoitusjuomia. Jo ennen Vanhan kauppahallin valmistumista E. Eriksson kauppasi tuoretta kalaa Helsingin kauppatorilla. Kauppahallin perustamisesta lähtien myymälämme on kruunannut Vanhan kauppahallin tarjontaa tuoreilla kalatuotteilla ja erikoisimmilla äyriäistuotteillaan. </p>
+
+		<p>Valikoimastamme löydät edelleen perinteisten kotimaisten kala- ja äyriäistuotteiden lisäksi valtavan määrän ulkomaalaisia tuontituotteita, sekä yrityksen itse valmistamia erikoistuotteita.</p>
+	</article>
+
+  </div>
+    
+	<div data-role="footer" data-position="fixed">
+		<h3><a class="mailto" href="#yhteystiedot" data-transition="slide">Eteläranta, 00130 Helsinki</a> | <a class="mailto" href="tel:+358207639334">+358 207 639 334</a> | <a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a> | <a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> | <a class="mailto" href="#yhteystiedot" data-transition="slide">Ma-la klo 8-18</a></h3>
+	</div>
+</div> 
+
+<!-- MYYMÄLÄ-sivu loppuu -->
+
+
+
+<!-- HISTORIA-sivu alkaa -->
+
+<div id="historia" data-role="page" data-theme="a">
+  <div data-position="fixed" data-role="header">
+		<div class="kielet">
+			<img class="kieli" src="kuvat/fi.png">
+			<img class="kieli" src="kuvat/en.png">
+			<img class="kieli" src="kuvat/ru.png">
+		</div>
+		<img class="logo" src="kuvat/logo.png">
+	<h1>Laadukasta kalaa vuodesta 1880</h1> 
+  
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#etusivu" data-transition="slide">ETUSIVU</a></li>
+		<li> <a href="#myymala" data-transition="slide">MYYMÄLÄ</a></li>
+		<li><a href="#galleria" data-transition="slide">GALLERIA</a></li>
+		<li><a href="#yhteystiedot" data-transition="slide">YHTEYSTIEDOT</a></li>
+		<li><a href="#tilaus" data-transition="slide">TILAUS</a></li>
+      </ul>
+    </div>
+  </div>
+ 	
+ <div data-role="main" class="ui-content"> 
+	<article class="ui-responsive">	
+	
+		<h2>Historiaa</h2>
+		
+		<div id="slideshow" class="cycle-slideshow">
+			<!-- cycle slideshow -->
+			<img src="kuvat/historia1.jpg">
+			<img src="kuvat/historia2.jpg">
+			<img src="kuvat/historia3.jpg">
+		</div>
+		
+		<p>Kalakauppa E. Erikssonin historia alkaa vuodesta 1880, jolloin Erik ja Erika Eriksson perustivat kalakaupan. Kauppaa käytiin aluksi Kauppatorin kolera-altaalta käsin, mutta toiminta siirtyi Wanhaan Kauppahalliin hallin auetessa. Erikssonit olivat ensimmäisiä kalatuotteita myyneistä kauppiaista kauppahallissa. Erik Eriksson keräsi suomukalat laajalti saaristopitäjistä ja purjehti takaisin Helsinkiin kauppamaan kalansa tukussa torikauppiaille. Vaimo Erikan vastuulla oli huolehtia rahastuksesta.</p>
+
+		<p>Erik ja Erika Erikssonin yritystä lähti jatkamaan heidän Hiittisissä asunut tyttärensä Ester, joka perusti porvoosta kotoisin olevan miehensä August ”Aku” Åvallin kanssa myös toisen kalayhtiön, Kalastajain Oy:n vuonna 1934.  Molemmat yhtiöt toimivat Vanhassa kauppahallissa ja Kalastajain Oy:lla oli käytössään kauppahallin kalahalli mm. elävien kalojen tukkumyyntiä varten. Elävien kalojen myynnistä kuitenkin luovuttiin ajan mittaan. Vilkkaimpina aikoina Kalastajain Oy:ssä työskenteli jopa parikymmentä henkeä myymässä. Kauppahallin myymälät pysyivät suosittuna kaupunkilaisten keskuudessa vuosikymmenten ajan ja myymälöiden toimintaa jatkoivat Esterin ja Akun lapset, Erik Åvall ja Carita Röntynen</p>
+
+		<p>Myöhemmin toinen kala-alan yritys, Kalakomppania Oy, fuusioitui Kalastajain Oy:n ja yritys jatkoi toimintaansa Kalastajain kalakomppania nimellä.  Fuusioitumisen yhteydessä Kalakauppa E. Eriksson eriytettiin omaksi yrityksekseen joka jatkoi toimintaansa kauppahallissa. Tällöin yrityksen toimintaan astuivat mukaan sisarukset Kira ja Kai Röntynen, Ester ja August Åvallin lapsenlapset. Kira vastasi Kauppahallin myymälästä ja Kai toimi Kalastajain kalakomppaniassa. Myöhemmin Kalastajain kalakomppania myytiin ahvenanmaalaiselle Chipsille.</p>
+
+		<p>Kalatukku E. Erikssonin nykyisen hallituksen puheenjohtaja Kai Röntynen, lähti johdattamaan vanhan kunnianarvoisen liikkeen uudelleen mukaan kalakauppaan 1980-luvulla. Wanhan Kauppahallin toiminta alkoi laajeta kun kalaa ryhdyttiin toimittamaan läheisiin ravintoloihin ja verkkosaaresta hankittiin yritykselle käsittelytiloja sekä varasto.</p>
+
+		<p>Nykyiset yrityksen toimitilat sijaitsevat Helsingin Roihupellossa. Lisäksi yrityksellä on tehtaanmyymälä sekä myyntipiste Wanhassa Kauppahallissa. Wanhan Kauppahallin myymälä on myös ulkopaikkakuntalaisten suosima kauppapaikka ja myymälä on saanut huomiota myös useissa kansainvälisissä tiedotusvälineissä. Wanhan kauppahallin remontin ajan myymälämme palveli asiakkaita myös Hietalahden kauppahallissa.</p>
+
+		<p>Kalatukku E. Eriksson Oy on saanut useita palkintoja toimintansa aikana:</p>
+
+		<p>Pro Kalan tunnuspalkinto Kai Röntyselle 2008, <br> 
+		tunnustuksena aktiivisesta ja idearikkaasta toiminnasta kalaruokakulttuurin ja kalan menekinedistämisen hyväksi<br> 
+		KalaFisk-tunnuspalkinto Kalatukku E. Erikssonille 2005<br>
+		Vuoden Kalakauppias Oy Kalakauppa E. Eriksson Ab 2000</p>
+		 
+
+		<p>Kuvat: Helsingin kaupunginmuseo, Jari Marselan arkisto</p>
+	</article>
+</div>
+ 
+	<div data-role="footer" data-position="fixed">
+			<h3><a class="mailto" href="#yhteystiedot" data-transition="slide">Eteläranta, 00130 Helsinki</a> | <a class="mailto" href="tel:+358207639334">+358 207 639 334</a> | <a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a> | <a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> | <a class="mailto" href="#yhteystiedot" data-transition="slide">Ma-la klo 8-18</a></h3>
+		</div>
+ </div> 
+ 
+<!-- HISTORIA loppuu -->
+ 
+ 
+ 
+<!-- GALLERIA ALKAA -->
+<div data-role="page" id="galleria" data-theme="a">
+  <div data-position="fixed" data-role="header">
+		<div class="kielet">
+			<img class="kieli" src="kuvat/fi.png">
+			<img class="kieli" src="kuvat/en.png">
+			<img class="kieli" src="kuvat/ru.png">
+		</div>
+		<img class="logo" src="kuvat/logo.png">
+	<h1>Laadukasta kalaa vuodesta 1880</h1>  
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#etusivu" data-transition="slide">ETUSIVU</a></li>
+		<li><a href="#myymala" data-transition="slide">MYYMÄLÄ</a></li>
+		<li> <a href="#historia" data-transition="slide">HISTORIA</a></li>
+		<li><a href="#yhteystiedot" data-transition="slide">YHTEYSTIEDOT</a></li>
+		<li><a href="#tilaus" data-transition="slide">TILAUS</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+	<div class="ui-responsive ui-grid-a">
+		<div id="gal" class="ui-block-a">
+			
+				<a href="kuvat/fb/1.jpg" data-lightbox="gal" data-title="Grillausvalmiita tuotteita kesään!"><img src="kuvat/fb/p1.jpg"></a>
+				<a href="kuvat/fb/2.jpg" data-lightbox="gal" data-title="Shampanja kuuluu ostereiden kaveriksi!"><img src="kuvat/fb/p2.jpg"></a>
+				<a href="kuvat/fb/3.jpg" data-lightbox="gal" data-title="Ranskalaisia Gillardeau-ostereita."><img src="kuvat/fb/p3.jpg"></a>
+				<a href="kuvat/fb/4.jpg" data-lightbox="gal" data-title="Meillä voit nauttia rapukaudesta myös paikanpäällä tarjoiltuna!"><img src="kuvat/fb/p4.jpg"></a>
+				<a href="kuvat/fb/5.jpg" data-lightbox="gal" data-title="Bistron kalalautaset vievät kielen mennessään!"><img src="kuvat/fb/p5.jpg"></a>
+				<a href="kuvat/fb/6.jpg" data-lightbox="gal" data-title="Kala- ja äyriäistapas."><img src="kuvat/fb/p6.jpg"></a>
+				<a href="kuvat/fb/7.jpg" data-lightbox="gal" data-title="Meiltä saat sashimit ja muut tuoreat kalat!"><img src="kuvat/fb/p7.jpg"></a>
+				<a href="kuvat/fb/8.jpg" data-lightbox="gal" data-title="Meiltä myös tuoreat sushit!"><img src="kuvat/fb/p8.jpg"></a>
+				<a href="kuvat/fb/9.jpg" data-lightbox="gal" data-title="Tuorekeitetyt meriravut viikottain!"><img src="kuvat/fb/p9.jpg"></a>
+				<a href="kuvat/fb/10.jpg" data-lightbox="gal" data-title="Tuorekalavalikoimamme on erittäin laaja. Meiltä löydät niin kotimaiset, kuin ulkomaalaisetkin merien herkut!"><img src="kuvat/fb/p10.jpg"></a>
+				<a href="kuvat/fb/11.jpg" data-lightbox="gal" data-title="Meiltä löydät elävät simpukat ja osterit!"><img src="kuvat/fb/p11.jpg"></a>
+				<a href="kuvat/fb/12.jpg" data-lightbox="gal" data-title="Savustettu puna-kampela Sundomin savustamolta!"><img src="kuvat/fb/p12.jpg"></a>
+				<a href="kuvat/fb/13.jpg" data-lightbox="gal" data-title="Tuorekalatiskin antimia!"><img src="kuvat/fb/p13.jpg"></a>
+				<a href="kuvat/fb/14.jpg" data-lightbox="gal" data-title="Turska on parhaimmillaan isona! Meiltä turskanseläkkeet, -kyljykset ja -fileet."><img src="kuvat/fb/p14.jpg"></a>
+				<a href="kuvat/fb/15.jpg" data-lightbox="gal" data-title="Sampi kuuluu laajaan kalavalikoimaamme. Sammen liha on taivaallisen makuista, sopii niin grilliin kuin pannullekkin!"><img src="kuvat/fb/p15.jpg"></a>
+				<a href="kuvat/fb/16.jpg" data-lightbox="gal" data-title="Meiltä myös savustetut kalat!"><img src="kuvat/fb/p16.jpg"></a>
+			
+		</div>
+		
+		<div id="vid" class="ui-block-b">
+			<video style="width:100%;height:auto" controls>
+				<source src="videot/ee.mp4" type="video/mp4" />
+			</video> 
+		</div>
+	</div>
+  </div>
+    
+
+
+	<div data-role="footer" data-position="fixed">
+		<h3><a class="mailto" href="#yhteystiedot" data-transition="slide">Eteläranta, 00130 Helsinki</a> | <a class="mailto" href="tel:+358207639334">+358 207 639 334</a> | <a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a> | <a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> | <a class="mailto" href="#yhteystiedot" data-transition="slide">Ma-la klo 8-18</a></h3>
+	</div>
+</div> 
+<!-- GALLERIA LOPPUU -->
+ 
+<!-- yhteystiedot-sivu alkaa-->
+
+<div data-role="page" id="yhteystiedot" data-theme="a">
+	  <div data-position="fixed" data-role="header">
+		<div class="kielet">
+			<img class="kieli" src="kuvat/fi.png">
+			<img class="kieli" src="kuvat/en.png">
+			<img class="kieli" src="kuvat/ru.png">
+		</div>
+		<img class="logo" src="kuvat/logo.png">
+
+		<h1>Laadukasta kalaa vuodesta 1880</h1>
+		<div data-role="navbar">
+		  <ul>
+			<li><a href="#etusivu" data-transition="slide">ETUSIVU</a></li>
+			<li> <a href="#myymala" data-transition="slide">MYYMÄLÄ</a></li>
+			<li> <a href="#historia" data-transition="slide">HISTORIA</a></li>
+			<li><a href="#galleria" data-transition="slide">GALLERIA</a></li>
+			<li><a href="#tilaus" data-transition="slide">TILAUS</a></li>
+		  </ul>
+		</div>
+	  </div>
+  
+  
+
+  <div data-role="main" class="ui-content">
+	<div id="yt" class="ui-grid-a ui-responsive">
+    
+		<div class="ui-block-a">
+			
+			<div>
+			<table id="yhteystietotable">
+				<caption><h2>YHTEYSTIEDOT:</h2></caption>
+				<thead><tr><th></th><th></th></tr></thead>
+				<tbody>
+					<tr>
+						<td>Osoite:</td>
+						<td>Eteläranta, 00130 Helsinki</td>
+					</tr>
+					<tr>
+						<td>Puhelin:</td>
+						<td><a class="mailto" href="tel:+358207639334">+358 207 639 334</a></td>
+					</tr>
+					<tr>
+						<td>E-mail:</td>
+						<td><a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a><br><a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> </td>
+					</tr>
+					<tr>
+						<td>Aukioloajat:</td>
+						<td>Ma-la klo 8-18</td>
+					</tr>
+					<tr>
+						<td>Yhteyshenkilö:</td>
+						<td>Juha Lindberg</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			</div>
+		</div>
+
+	
+		<div id="iframeblock" class="ui-block-b">
+			<div id="iframediv">
+			<iframe id="iframe" src="https://www.google.com/maps/embed/v1/search?q=Vanha+kauppahalli,+Eteläranta,+Helsinki,+Suomi&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+ </div>
+
+	<div data-role="footer" data-position="fixed">
+			<h3><a class="mailto" href="#yhteystiedot" data-transition="slide">Eteläranta, 00130 Helsinki</a> | <a class="mailto" href="tel:+358207639334">+358 207 639 334</a> | <a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a> | <a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> | <a class="mailto" href="#yhteystiedot" data-transition="slide">Ma-la klo 8-18</a></h3>
+		</div>
+</div> 
+  <!-- yhteystiedot-sivu loppuu -->
+  
+  
+ <!-- tilaus-sivu alkaa -->
+ <div data-role="page" id="tilaus" data-theme="a">
+	  <div data-position="fixed" data-role="header">
+		<div class="kielet">
+			<img class="kieli" src="kuvat/fi.png">
+			<img class="kieli" src="kuvat/en.png">
+			<img class="kieli" src="kuvat/ru.png">
+		</div>
+		<img class="logo" src="kuvat/logo.png">
+
+		<h1>Laadukasta kalaa vuodesta 1880</h1>
+		<div data-role="navbar">
+		  <ul>
+			<li><a href="#etusivu" data-transition="slide">ETUSIVU</a></li>
+			<li> <a href="#myymala" data-transition="slide">MYYMÄLÄ</a></li>
+			<li> <a href="#historia" data-transition="slide">HISTORIA</a></li>
+			<li><a href="#galleria" data-transition="slide">GALLERIA</a></li>
+			<li><a href="#yhteystiedot" data-transition="slide">YHTEYSTIEDOT</a></li>
+		  </ul>
+		</div>
+	  </div>
+  
+
+<div data-role="main" class="ui-content">
+
+			<div data-role="collapsible" data-iconpos="right">
+				<h3>TUORE KALA</h3>	
+					<form id="lohi" data-ajax="false" action="#tilaus"></form>
+					<form id="siika" data-ajax="false"></form>
+					
+					<table id="tuore" data-role="table" data-mode="reflow" class="tilauslista ui-responsive">
+
+					     <thead>
+					       <tr>
+							<th data-priority="1" class="tuote"  style="width:110px">Tuote</th>
+					        <th data-priority="1" style="width:200px">Muoto</th>
+					        <th>Määrä (KG)</th>
+					        <th>Lisätiedot</th>
+							<th style="width:60px">Lisäys</th>
+					       </tr>
+					     </thead>
+					     <tbody>
+							
+								
+										
+							<tr>
+
+							<td>Siika</td>
+
+					         <td>
+
+								<fieldset form="siika" data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="siika" type="radio" name="muoto" id="siika-1" value="Kokonainen" checked="checked">
+								    <label for="siika-1">Kokonainen</label>
+								    <input form="siika" type="radio" name="muoto" id="siika-2" value="File">
+								    <label for="siika-2">File</label>
+								</fieldset>
+
+							</td>
+
+					         <td><input form="siika" range="range" type="range" name="maara" id="slider-2" step="0.01" value="0.00" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="siika" type="text" name="lisatiedot" id="textinput-2" placeholder="Lisätiedot" value=""></td>
+					         <td><button form="siika" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="siika" type="hidden" name="tuote" value="Siika"></input>
+					       </tr>
+					
+												<tr>
+
+							<td>Lohi</td>
+					         <td>
+
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="lohi" type="radio" name="muoto" id="lohi-1" value="Kokonainen" checked="checked">
+								    <label for="lohi-1">Kokonainen</label>
+								    <input form="lohi" type="radio" name="muoto" id="lohi-2" value="File">
+								    <label for="lohi-2">File</label>
+								</fieldset>
+
+							</td>
+
+					         <td><input form="lohi" range="range" type="range" name="maara" id="slider-2" step="0.01" value="0.00" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="lohi" type="text" name="lisatiedot" id="textinput-2" placeholder="Lisätiedot" value=""></td>
+					         <td><button type="submit" form="lohi" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="lohi" type="hidden" name="tuote" value="Lohi"></input>
+					       </tr>
+					
+
+										
+						</tbody>
+						</table>
+
+
+			</div>
+		
+				<div data-role="collapsible" data-iconpos="right">
+					<h3>GRAAVI</h3>	
+					<form data-ajax="false" id="grlohi"></form>
+					<form data-ajax="false" id="grsiika"></form>
+					
+						<table id="graavi" data-role="table" data-mode="reflow" class="tilauslista ui-responsive">
+					     <thead>
+					       <tr>
+							<th  style="width:110px">Tuote</th>
+					        <th style="width:200px">Muoto</th>
+					        <th>Määrä (KG)</th>
+					        <th>Lisätiedot</th>
+							<th style="width:60px">Lisäys</th>
+					       </tr>
+					     </thead>
+					     <tbody>
+					       <tr>
+
+							<td>Graavilohi</td>
+					         <td>
+								<div class="radioslide">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="grlohi" type="radio" name="muoto" id="grlohi-1" value="Pala" checked="checked">
+								    <label for="grlohi-1">Pala</label>
+								    <input form="grlohi" type="radio" name="muoto" id="grlohi-2" value="Siivu">
+								    <label for="grlohi-2">Siivu</label>
+								</fieldset>
+								</div>
+							</td>
+
+					         <td><input form="grlohi" type="range" name="maara" id="slider-3" step="0.01" value="0" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="grlohi" type="text" name="lisatiedot" id="textinput-3" placeholder="Lisätiedot" value=""></td>
+					         <td><button form="grlohi" type="submit" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="grlohi" type="hidden" name="tuote" value="Graavilohi"></input>
+					       </tr>	
+							<tr>
+
+							<td>Graavisiika</td>
+
+					         <td>
+								<div class="radioslide">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="grsiika" type="radio" name="muoto" id="grsiika-1" value="Pala" checked="checked">
+								    <label for="grsiika-1">Pala</label>
+								    <input form="grsiika" type="radio" name="muoto" id="grsiika-2" value="Siivu">
+								    <label for="grsiika-2">Siivu</label>
+								</fieldset>
+								</div>
+							</td>
+
+					         <td><input form="grsiika" type="range" name="maara" id="slider-4" step="0.01" value="0" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="grsiika" type="text" name="lisatiedot" id="textinput-4" placeholder="Lisätiedot" value=""></td>
+					         <td><button form="grsiika" type="submit" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="grsiika" type="hidden" name="tuote" value="Graavisiika"></input>
+					       </tr>
+						</tbody>
+						</table>
+				</div>
+		
+				<div data-role="collapsible" data-iconpos="right">
+					<h3>KYLMÄSAVU</h3>	
+					<form data-ajax="false" id="kslohi"></form>
+					<form data-ajax="false" id="kssiika"></form>
+					
+						<table id="kylmasavu" data-role="table" data-mode="reflow" class="tilauslista ui-responsive">
+					     <thead>
+					       <tr>
+							<th  style="width:110px">Tuote</th>
+					        <th style="width:200px">Muoto</th>
+					        <th>Määrä (KG)</th>
+					        <th>Lisätiedot</th>
+							<th style="width:60px">Lisäys</th>
+					       </tr>
+					     </thead>
+					     <tbody>
+					       <tr>
+
+							<td>Kylmäsavulohi</td>
+
+					         <td>
+								<div class="radioslide">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="kslohi" type="radio" name="muoto" id="kslohi-1" value="Pala" checked="checked">
+								    <label for="kslohi-1">Pala</label>
+								    <input form="kslohi" type="radio" name="muoto" id="kslohi-2" value="Siivu">
+								    <label for="kslohi-2">Siivu</label>
+								</fieldset>
+								</div>
+							</td>
+
+					         <td><input form="kslohi" type="range" name="maara" id="slider-5" step="0.01" value="0" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="kslohi" type="text" name="lisatiedot" id="textinput-5" placeholder="Lisätiedot" value=""></td>
+					         <td><button  form="kslohi" type="submit" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="kslohi" type="hidden" name="tuote" value="Kylmäsavulohi"></input>
+					       </tr>	
+							<tr>
+
+							<td>Kylmäsavusiika</td>
+
+					         <td>
+								<div class="radioslide">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="kssiika" type="radio" name="muoto" id="kssiika-1" value="Pala" checked="checked">
+								    <label for="kssiika-1">Pala</label>
+								    <input form="kssiika" type="radio" name="muoto" id="kssiika-2" value="Siivu">
+								    <label for="kssiika-2">Siivu</label>
+								</fieldset>
+								</div>
+							</td>
+
+					         <td><input form="kssiika" type="range" name="maara" id="slider-6" step="0.01" value="0" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="kssiika" type="text" name="lisatiedot" id="textinput-6" placeholder="Lisätiedot" value=""></td>
+					         <td><button form="kssiika" type="submit" id="submit-6" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="kssiika" type="hidden" name="tuote" value="Kylmäsavusiika"></input>
+					       </tr>
+						</tbody>
+						</table>
+				</div>
+		
+				<div data-role="collapsible" data-iconpos="right">
+					<h3>ÄYRIÄISET</h3>	
+					<form data-ajax="false" id="tuorekatka"></form>
+					<form data-ajax="false" id="tuorehummeri"></form>
+					
+					<table id="ayriaiset" data-role="table" data-mode="reflow" class="tilauslista ui-responsive">
+					     <thead>
+					       <tr>
+							<th  style="width:110px">Tuote</th>
+					        <th style="width:220px">Muoto</th>
+					        <th>Määrä (KG)</th>
+					        <th>Lisätiedot</th>
+							<th style="width:60px">Lisäys</th>
+					       </tr>
+					     </thead>
+					     <tbody>
+							<tr>
+
+							<td>Tuore katkarapu</td>
+
+					         <td>
+								<div class="radioslide">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="tuorekatka" type="radio" name="muoto" id="tuorekatka-1" value="Kokonainen" checked="checked">
+								    <label for="tuorekatka-1">Elävä</label>
+								    <input form="tuorekatka" type="radio" name="muoto" id="tuorekatka-2" value="Kuorittu">
+								    <label for="tuorekatka-2">Kuorittu</label>
+								</fieldset>
+								</div>
+							</td>
+
+					         <td><input form="tuorekatka" type="range" name="maara" id="slider-8" step="0.01" value="0" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="tuorekatka" type="text" name="lisatiedot" id="textinput-8" placeholder="Lisätiedot" value=""></td>
+					         <td><button form="tuorekatka" type="submit" id="submit-8" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="tuorekatka" type="hidden" name="tuote" value="Tuore katkarapu"></input>
+					       </tr>	
+							<tr>
+
+							<td>Hummeri 400-500g</td>
+
+					         <td>
+								<div class="radioslide">
+								<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								    <input form="tuorehummeri" type="radio" name="muoto" id="tuorehummeri-1" value="Elävä" checked="checked">
+								    <label for="tuorehummeri-1">Elävä</label>
+								    <input form="tuorehummeri" type="radio" name="muoto" id="tuorehummeri-2" value="Keitetty">
+								    <label for="tuorehummeri-2">Keitetty</label>
+								</fieldset>
+								</div>
+							</td>
+
+					         <td><input form="tuorehummeri" type="range" name="maara" id="slider-8" step="0.01" value="0" min="0.00" max="10.00" data-highlight="true"></td>
+					         <td><input form="tuorehummeri" type="text" name="lisatiedot" id="textinput-8" placeholder="Lisätiedot" value=""></td>
+					         <td><button form="tuorehummeri" type="submit" id="submit-8" class="ui-shadow ui-btn ui-corner-all ui-mini" onclick="lisaa(this.form);">Lisää tilaukseen</button></td>
+							<input form="tuorehummeri" type="hidden" name="tuote" value="Hummeri 400-500g"></input>
+					       </tr>
+						</tbody>
+						</table>
+				</div>
+				<div class="ui-grid-a  ui-responsive">
+					<div id="tilauskori" class="ui-block-a">
+						<h3>TILAUSKORIN SISÄLTÖ:</h3>
+						
+						<table data-role="table" data-mode="reflow" class="tilauslista ui-responsive">
+
+						     <thead>
+						       <tr>
+								<th style="width:110px">Tuote</th>
+						        <th style="width:200px">Muoto</th>
+						        <th>Määrä (KG)</th>
+						        <th>Lisätiedot</th>
+								<th style="width:60px">Poista</th>
+						       </tr>
+						     </thead>
+						     <tbody id="tilauskoritaulu">
+									
+
+									
+							</tbody>
+							</table>
+					</div>
+					
+					<div id="asiakastiedot" class="ui-block-b">
+
+						<form data-ajax="false" >
+						<fieldset>
+						<div>
+						<label for="paiva">Tilauksen noutopäivä: </label>
+						<input type="text" id="paiva" name="paiva" data-role="date" required data-clear-btn="true">
+						</div>
+						<div>
+						<label for="noutoaika">Tilauksen noutoaika n.(jos tiedossa): </label> 
+						<input autocomplete="off" id="noutoaika" name="noutoaika" class="timepicker" type="text" data-clear-btn="true">
+						</div>
+						<div>
+
+						<div>
+						 <label for="etunimi">Etunimi:</label>
+						 <input  type="text" id="etunimi" name="etunimi" title="Kirjoita etunimesi" data-clear-btn="true">
+						</div>
+						<div>
+						 <label for="sukunimi">Sukunimi:</label>
+						 <input  type="text" id="sukunimi" name="sukunimi" title="Kirjoita sukunimesi" data-clear-btn="true">
+						</div>
+						<div>
+						 <label for="email">Sähköposti:</label>
+						 <input  required type="email" id="email" name="email" title="Kirjoita sähköpostiosoitteesi" data-clear-btn="true">
+						</div>
+						<div>
+						 <label for="puhelin">Puhelin</label>
+						 <input  required type="tel" id="puhelin" name="puhelin" title="Kirjoita puhelinnumerosi" data-clear-btn="true">
+						</div>
+
+						   
+						<div>
+						<label for="viesti">Erikoistoivomuksia:</label>
+						<textarea id="viesti" name="viesti" title="Kerro vielä varaukseesi liittyviä asioita" rows="3" cols="30" ></textarea>
+						</div>
+						<input type="submit" value="Lähetä" onclick="laheta(this.form);">
+						</fieldset>
+						</form>
+					</div>
+				
+				</div>
+
+	<div data-role="footer" data-position="fixed">
+			<h3><a class="mailto" href="#yhteystiedot" data-transition="slide">Eteläranta, 00130 Helsinki</a> | <a class="mailto" href="tel:+358207639334">+358 207 639 334</a> | <a class="mailto" href="mailto:kauppahalli@kalatukkueriksson.fi" target="_top">kauppahalli@kalatukkueriksson.fi</a> | <a class="mailto" href="mailto:juha.lindberg@kalatukkueriksson.fi" target="_top">juha.lindberg@kalatukkueriksson.fi</a> | <a class="mailto" href="#yhteystiedot" data-transition="slide">Ma-la klo 8-18</a></h3>
+		</div>
+</div> 
+
+
+ <!-- tilaus-sivu loppuu -->
+
+<script src="js/lightbox.js"></script>
+<script src="js/lisaaScript.js"></script>
+<script src="js/poistaScript.js"></script>
+<script src="js/lahetaScript.js"></script>
+<script>
+$(document).ready(function(){
+    $('input.timepicker').timepicker({ timeFormat: 'H:mm',minTime: '08:00', maxTime: '18:00', interval: 30});
+	
+	for(var i = 0;i<sessionStorage.length;i++){
+	var elementtiStr = sessionStorage.getItem(sessionStorage.key(i));
+	$('#tilauskoritaulu').append(elementtiStr);
+	}
+	
+	$('#iframe').width($('#yhteystiedot').width() / 2.6);
+		$('#iframe').height($('#iframe').width());
+		
+	$('.kieli').click(function() {
+		alert("Tästä kielivalikosta saa tulevaisuudessa valittua sivuston kielen.");
+	});
+	
+});
+</script>
+
+<script>
+
+	$( window ).resize(function() {
+				$('#iframe').width("90%");
+				$('#iframe').height($('#iframe').width());
+	});
+</script>
+
+											
+											
+</body>
+</html>

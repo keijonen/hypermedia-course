@@ -1,0 +1,60 @@
+<div ui-content-for="title">
+  <span>Sopimusehdot</span>
+</div>
+
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="section">
+	<img id="ban2" src="img/banneri2.jpg">
+      <div class="panel-group" 
+        
+        ui-state='myAccordion' 
+        ui-default='1'>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" ui-set="{'myAccordion': 1}">
+        
+            <h4 class="panel-title ng-binding">
+                Sopimusehdot 1
+            </h4>
+          <div ui-if="myAccordion == 1">
+            <div class="panel-body ng-binding">
+              Edullisista ja laadukkaista...
+            </div>
+          </div>
+          </div>
+		  </div>
+		  
+        <div class="panel panel-default">		  
+		  <div class="panel-heading" ui-set="{'myAccordion': 2}">
+        
+            <h4 class="panel-title ng-binding">
+                Sopimusehdot 2
+            </h4>
+          <div ui-if="myAccordion == 2">
+            <div class="panel-body ng-binding">
+              Vuokraamossa esität...
+            </div>
+          </div>
+          </div>
+		  </div>
+		  
+		<div class="panel panel-default">
+		    <div class="panel-heading" ui-set="{'myAccordion': 3}">
+        
+            <h4 class="panel-title ng-binding">
+                Sopimusehdot 3
+            </h4>
+          <div ui-if="myAccordion == 3">
+            <div class="panel-body ng-binding">
+              Vuokraaja on velvollinen...
+            </div>
+          </div>
+          </div>		  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

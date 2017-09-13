@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- lisää muut meta-elementit tähän -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href="css/w3.css" rel="stylesheet" type="text/css"/>
+<link href="css/omatyyli.css" rel="stylesheet" type="text/css"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<title>etusivu</title>
+
+<!-- lisää linkit ulkoisiin tyylitiedostoihin tähän-->
+
+</head>
+
+<body>
+
+<!-- navigointi -->
+
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left w3-hover-purple show-large">
+<!-- mobiilinäkymän navigoinnin sulkemispainike -->
+  <a href="javascript:void(0)" onclick="w3_close()" 
+  class="w3-closenav w3-large w3-hide-large">sulje ×</a>
+<!-- kuvituskuva logo? --> 
+<img src="kuvat/aku.jpg" alt="Aku">
+<a href="#"  class="active">etusivu</a></li>
+<a href="hahmot.html" class="">hahmot</a>
+<a href="kohteet.html" class="">kohteet</a>
+<a href="piirros.html" class="">piirros</a>
+<a href="studiot.html" class="">studiot</a>
+
+<!-- kuvistukuvia ? -->
+<img src="kuvat/pluto.jpg" alt="Pluto">
+<img src="kuvat/hessu.jpg" alt="Hessu">
+
+<!-- ulkopuolinen linkki ? -->
+<a href="http://www.disneylandparis.com/" class="">disneylandparis.com</a>
+</nav>
+
+
+<!-- sivun sisältö, ensiksi header -->
+
+<div class="w3-container w3-main w3-card-2 sivudiv">
+  
+<header class="w3-purple">
+
+<!-- mobiilinäytölle navigoinnin avauspainike näkyviin -->
+<span class="w3-opennav w3-xlarge w3-hide-large w3-card-2 hederi" onclick="w3_open()">&nbsp;☰&nbsp;</span>
+
+<br>
+<!-- pääotsikko -->
+<h1>
+Disneyland Paris
+</h1>
+</header>
+
+<!-- sivun sisältö, 3 kuvaa & tekstit painikkeineen -->
+
+<section class="w3-row">
+
+<article class="w3-third">
+<div class="etusivu_kuvat">
+      <span class="">
+        <img src="kuvat/etusivu1.jpg" alt="Satuhahmoja">
+      </span>   
+      <h3>Satuhahmoja</h3>
+      <p>Paraati on varma paikka kohdata suosikkohahmo</p>
+      <a href="hahmot.html" class="buttoni">hahmot</a>
+    </div>
+</article>
+
+<article class="w3-third">
+    <div class="etusivu_kuvat">
+      <span class="">
+        <img src="kuvat/etusivu2.jpg" alt="Seikkailuja">
+      </span>   
+      <h3>Seikkailuja</h3>
+      <p>Merirosvot vievät sinut seikkailuun maan alle</p>
+      <a href="kohteet.html" class="buttoni">kohteet</a>
+    </div>
+ </article>  
+ 
+ <article class="w3-third">
+    <div class="etusivu_kuvat">
+      <span class="">
+        <img src="kuvat/etusivu3.jpg" alt="Studiot">
+      </span>   
+      <h3>Studiot</h3>
+      <p>Elokuvien ihmeellinen maailma</p>
+      <a href="studiot.html" class="buttoni">studiot</a>
+    </div>
+</article>
+</section>
+
+<section class="">
+<article>
+  <p>Disneyland Paris sijaitsee 32 kilometriä Pariisista itään ja koostuu kahdesta teemapuistosta Parc Disneyland ja Walt Disney Studios. Lisäksi teemapuiston vieressä sijaitsee Disney Village, josta löytyy kauppoja, ravintoloita ja hotelleja.</p>
+  <p>Disneyland Parcin sisäänkäynnistä saavutaan Main Streetille, jota pitkin edetään keskusaukiolle Prinsessa Ruususen satulinnan eteen. Tästä voi suunnistaa Frontierlandiin, Adventurelandiin, Fantasylandiin tai Discoverylandiin.<br>
+  </p>
+  <p>
+ Disneyland Parcin viereen avattiin vuonna 2002  Walt Disney Studios, joka esittelee vierailijalle elokuvien tekoa, tehosteita ja stuntteja, elokuvanostalgiaa ja lavasteita.
+</p>
+  <p>Kuuntele iloisia ääniä:</p>
+  <audio controls="controls">
+<source src="musa/nauru1.mp3" type="audio/mpeg" >
+</audio>
+  <p>Nauru on tarttuvaa</p>
+   <audio controls="controls">
+<source src="musa/nauru2.mp3" type="audio/mpeg" >
+</audio>
+  <p>Huvipuiston tunnelmaa </p>
+     <audio controls="controls">
+<source src="musa/nauru3.mp3" type="audio/mpeg" >
+</audio>
+  <p>Huvipuiston ääniä </p>
+
+</article>
+</section>
+
+
+</div>
+
+<!-- lisää javascript tähän -->
+
+
+<script>
+$( window ).resize(function() {
+    if ( $(window).width() > 769 ) {
+	w3_open();
+}
+});
+</script>
+<script>
+function w3_open() {
+document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+</script>
+</body>
+</html>
